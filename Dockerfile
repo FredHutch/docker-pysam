@@ -10,7 +10,7 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/* \
   && python -m pip install --upgrade awscli
 
-RUN python -m pip install boto3 pandas pysam
+RUN python -m pip install boto3 pandas pysam plotnine
 
 RUN aws --version
 
